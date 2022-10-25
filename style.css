@@ -162,7 +162,6 @@ text-align: left;
   table {
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
     border: 2px solid rgb(0, 0, 0);
     font-family: 'Sen';
     margin-top: 3em;
@@ -187,6 +186,6 @@ text-align: left;
     background-color: white;
   }
 
-  tr:first-child td {
+  tr:first-child {
     background-color: #16a7ff;
 }
