@@ -100,6 +100,11 @@
     padding-left: 10%;
     text-align: left;
       }
+
+    table {
+        font-size: smaller;
+        margin: 0;
+    }
   }
 
   @media all and (max-width: 500px) {
@@ -156,7 +161,6 @@ font-size: smaller;
     margin-bottom: 3em;
     margin-left:10%;
     margin-right:10%;
-    width: 80%;
   }
 
   th, td {
