@@ -49,27 +49,18 @@
       width: 100%;
       margin-top: 1.5em;
   }
-  .english-presentation{
+  .horizontal-box{
     background:  	#daf1ff ;
     height: auto;
     font-size: large;
-    padding-top: 1.5em;
+    padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 10%;
     padding-right: 10%;
     text-align: left;
   
   }
-  .norsk-presentation{
-    background:  	#daf1ff ;
-    height: auto;
-    font-size: large;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: left;
-  }
+  
   .aside {background: white; padding-left: 10%;}
   
   @media all and (min-width: 768px) {
@@ -93,11 +84,6 @@
     margin: 0;
     
     }
-
-    table {
-      margin-left:10%;
-      margin-right:10%;
-    }
     
     h1 {
     font-size: xxx-large
@@ -109,16 +95,18 @@
     h1 {
       font-size: xx-large
       }
-      .english-presentation{
+      .horizontal-box{
 
     padding-left: 10%;
     text-align: left;
       }
-      .norsk-presentation{
+  }
 
-padding-left: 10%;
-text-align: left;
-}
+  @media all and (max-width: 500px) {
+    table {
+font-size: smaller;
+
+    }
   }
 
   body {
@@ -166,6 +154,8 @@ text-align: left;
     font-family: 'Sen';
     margin-top: 3em;
     margin-bottom: 3em;
+    margin-left:10%;
+    margin-right:10%;
   }
 
   th, td {
