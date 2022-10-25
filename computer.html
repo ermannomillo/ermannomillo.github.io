@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Informatikkordliste</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=STIX Two Text' rel='stylesheet'>
+<style> 
+
+    .flex-container {
+      display: -webkit-flex;
+      display: flex;  
+      -webkit-flex-flow: row wrap;
+      flex-flow: row wrap;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .flex-container > * {
+      padding-bottom: 10px;
+	  padding-top: 10px;
+      flex: 1 100%;
+    }
+	
+	html {
+	   position: relative;
+		min-height: 100%;
+	}
+	
+	body {
+		background: white;
+	}
+    
+    .main {
+      text-align: left;
+      height: auto;
+      background:url(https://www.shipspotting.com/photos/big/7/8/0/1243087.jpg);
+      background-size: cover;
+	  background-repeat: no-repeat;
+	  width:100%;
+	  height:100%;
+	  background-position-y: 70%;
+	  background-position-x: 60%;
+    }
+    
+    .header {background: #ff1632;
+	padding-left: 10%}
+	
+    .footer {
+      background: #16a7ff;
+      height: auto;
+	   overflow: hidden;
+	    position: absolute;
+		 bottom: 0;
+		width: 100%;
+		margin-top: 10px;
+    }
+	.banner {
+      background:  	#daf1ff ;
+      height: auto;
+    }
+    .aside {background: white; padding-left: 10%;}
+    
+    @media all and (min-width: 768px) {
+      
+      .aside { flex: 0.1 auto; }
+      .main    { flex: 3 0px; height: auto;}
+      .aside { order: 0; 
+      }
+      .main    { order: 0; 
+        padding-left: 5%;
+        color: white;
+      }
+      .footer  { order: 4; }
+      body
+      {
+      /*margin-left:10%;
+      margin-right:10%;
+      background-color: #f2f2f2;
+      */
+      margin: 0;
+      
+      }
+
+      table {
+        margin-left:10%;
+		margin-right:10%;
+      }
+	  
+	  h1 {
+      font-size: xxx-large
+		}
+    }
+
+    @media all and (max-width: 768px) {
+      body {margin: 0;}
+	  h1 {
+		font-size: xx-large
+		}
+    }
+
+    body {
+      font-family: 'Sen';
+      margin-top: 0
+      }
+
+
+     /* Add a black background color to the top navigation */
+	.topnav {
+	  overflow: hidden;
+	}
+
+	/* Style the links inside the navigation bar */
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 20px;
+	}
+
+	/* Change the color of links on hover */
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+
+	/* Add an active class to highlight the current page */
+	.topnav a.active {
+	  background: #16a7ff;
+	}
+
+	/* Hide the link that should open and close the topnav on small screens */
+	.topnav .icon {
+	  display: none;
+	} 
+		
+	table {
+	  border-collapse: collapse;
+	  border-spacing: 0;
+	  width: 100%;
+	  border: 2px solid rgb(0, 0, 0);
+	  font-family: 'Sen';
+	  margin-top: 3em;
+	  margin-bottom: 3em;
+	}
+
+	th, td {
+	  text-align: left;
+	  padding: 16px;
+	}
+
+	th {
+	  font-family: 'Sen';
+	  background-color: #16a7ff;
+	}
+
+	tr:nth-child(odd) {
+	  background-color: #f2f2f2;
+	}
+	
+	tr:nth-child(even) {
+	  background-color: white;
+	}
+
+    </style>
+<body>
+
+<div class="flex-container">
+    <div class="header">
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./engineering.html" >Ingeniør</a>
+        <a href="./computer.html" class="active">Informatikk</a>
+      </div>
+    </div>
+
+    <div class="aside"><h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1></div>
+    <article class="main">
+      <h2>Velkommen!</h2>
+      <p> </p>
+    </article>
+	
+    <div class="banner"> Velkommen!</div>
+	
+    <table >
+      <tr font-family="Sen">
+        <th>Ord</th>
+        <th>IPA</th>
+        <th>Engelsk Oversettelse</th>
+      </tr>
+      <tr>
+        <td>avbryte, annullere</td>
+        <td>Smith</td>
+        <td>abort</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>Adam</td>
+        <td>Johnson</td>
+        <td>67</td>
+      </tr>
+    </table>
+
+    <footer class="footer">© 2022 Nicolò Ermanno Millo</footer>
+  </div>
+
+	<script src="CsvToTable.js"></script>
+<script>
+	var csvtotable = new CsvToTable({
+		csvFile: 'ordliste.csv'
+	});
+	csvtotable.run();
+</script>
+
+</body>
+</html>
