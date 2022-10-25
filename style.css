@@ -37,7 +37,7 @@
     color: white;
   }
 
-main-informatikk {
+.main-informatikk {
     text-align: left;
     height: auto;
     background:url(https://img.gfx.no/2580/2580408/nord-1-norsk-data.1050x723.jpg);
@@ -45,7 +45,7 @@ main-informatikk {
     background-repeat: no-repeat;
     width:100%;
     height:100%;
-    background-position-y: 70%;
+    background-position-y: 67%;
     background-position-x: 60%;
     text-shadow: 2px 2px 5px #000000;
     padding-left: 10%;
@@ -201,3 +201,23 @@ font-size: smaller;
   tr:first-child {
     background-color: #16a7ff;
 }
+
+
+.row {
+    margin-top: 10%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    font-size: xx-large;
+    height: 100px; /* Should be removed. Only for demonstration */
+    vertical-align: middle;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
