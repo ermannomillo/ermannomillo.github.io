@@ -186,3 +186,7 @@ text-align: left;
   tr:nth-child(even) {
     background-color: white;
   }
+
+  tr:first-child td {
+    background-color: #16a7ff;
+}
