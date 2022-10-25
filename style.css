@@ -88,6 +88,11 @@
     h1 {
     font-size: xxx-large
       }
+      
+     table {
+        margin-left:10%;
+        margin-right:10%;    
+     }
   }
 
   @media all and (max-width: 768px) {
@@ -159,8 +164,6 @@ font-size: smaller;
     font-family: 'Sen';
     margin-top: 3em;
     margin-bottom: 3em;
-    margin-left:10%;
-    margin-right:10%;
   }
 
   th, td {
