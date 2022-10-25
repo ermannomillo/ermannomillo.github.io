@@ -27,35 +27,16 @@
 	</div>
 	
 	
-    <div class="english-presentation">
+    <div class="horizontal-box">
 		 Here are collected the most relevant IT and engineering words translated to Norwegian (Bokmål). <br> Each word is associated with  IPA, <i>International Phonetic Alphabet</i>, transcription. It helps the reader to pronounciate and so comprehend correctly the words.  
 	</div>
-	<div class="norsk-presentation">
+	<div class="horizontal-box">
 		Her det finnes de mest relevante informatikk- og ingeniørordene oversatt til norsk (bokmål).<br> Hvert ord er assosiert med IPA, <i>International Phonetic Alphabet</i>>, transkripsjon. Det hjelper leseren til å uttale og dermed forstå ordene riktig.
    </div>
 	
+
     <footer class="footer">© 2022 Nicolò Ermanno Millo</footer>
   </div>
-
-   <script src="https://d3js.org/d3.v3.min.js"></script>
-
-   <script type="text/javascript"charset="utf-8">
-	   d3.text("ordliste.csv", function(data) {
-		   var parsedCSV = d3.csv.parseRows(data);
-
-		   var container = d3.select("body")
-			   .append("table")
-
-			   .selectAll("tr")
-				   .data(parsedCSV).enter()
-				   .append("tr")
-
-			   .selectAll("td")
-				   .data(function(d) { return d; }).enter()
-				   .append("td")
-				   .text(function(d) { return d; });
-	   });
-   </script>
 
 </body>
 </html>
