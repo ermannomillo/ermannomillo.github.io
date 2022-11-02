@@ -1,0 +1,312 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: white;
+  font-family: 'Sen';
+  margin-top: 0
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+  
+a:hover {
+  color: #16a7ff;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container > * {
+padding-bottom: 10px;
+padding-top: 10px;
+flex: 1 100%;
+}
+
+.main {
+  text-align: left;
+  height: auto;
+  background:url(https://upload.wikimedia.org/wikipedia/commons/6/69/2011-05-29_Bj%C3%B8rvika.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
+  background-position-y: 70%;
+  background-position-x: 60%;
+  text-shadow: 2px 2px 5px #000000;
+  padding-left: 10%;
+  color: white;
+}
+
+.main-informatikk {
+  text-align: left;
+  height: auto;
+  background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Vienna_-_Telefunken_RA_463-2_analog_computer_-_0150.jpg/1280px-Vienna_-_Telefunken_RA_463-2_analog_computer_-_0150.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
+  background-position-y: 67%;
+  background-position-x: 60%;
+  text-shadow: 2px 2px 5px #000000;
+  padding-left: 10%;
+  color: white;
+}
+
+.main-ingenior {
+  text-align: left;
+  height: auto;
+  background:url(https://upload.wikimedia.org/wikipedia/commons/e/eb/MS_Nordnorge%2C_Hurtigruten_in_Raftsundet%2C_Nordland%2C_Norway%2C_2015_September.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:100%;
+  background-position-y: 67%;
+  background-position-x: 60%;
+  text-shadow: 2px 2px 5px #000000;
+  padding-left: 10%;
+  color: white;
+}
+  
+.header {
+  background: #ff1632;
+  padding-left: 10%
+}
+  
+.footer {
+  background: #16a7ff;
+  height: auto;
+  overflow: hidden;
+  position: inherit;
+  bottom: 0;
+  width: 100%;
+}
+
+.horizontal-box{
+  background:  	#daf1ff ;
+  height: auto;
+  font-size: large;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: left;
+}
+  
+.aside {
+  background: white; 
+  padding-left: 10%;
+}
+  
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background: #16a7ff;
+}
+
+.topnav .icon {
+  display: none;
+} 
+    
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid rgb(0, 0, 0);
+  font-family: 'Sen';
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  font-family: 'Sen';
+  background-color: #16a7ff;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:first-child {
+  background-color: #16a7ff;  
+}
+
+.row {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 100px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000000;
+}
+  
+.row:after {  
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sea1 {
+  background-image: url(sea1.jpg);
+  background-position-x: 0%;
+  background-position-y: 56%;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+#sea2{
+  background-image: url(Sea2.png);
+  background-position-x: 0%;
+  background-position-y: 56%;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+#sea3{
+  background-image: url(sea3.jpg);
+  background-position-x: 0%;
+  background-position-y: 56%;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+float-container {
+  border: 3px solid #fff;
+  padding-bottom: 0;
+  margin-left: 5%;
+  background-color: #f2f2f2;
+}
+
+.image-child {
+  width: 20%;
+  float: left;
+  padding: 0;
+  margin-left: 3%;
+}  
+
+.reference-child {
+  width: 60%;
+  float: left;
+  text-align: left;
+  vertical-align: bottom;
+  padding: 0;
+}  
+
+@media all and (min-width: 768px) {
+  body{
+    margin: 0;
+  }
+  .aside { 
+    flex: 0.2 auto; 
+    order: 0;  
+  }
+  .main    { 
+    flex: 3 0px; 
+    height: auto; 
+    order: 0; 
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+  }
+  .main-informatikk { 
+    flex: 3 0px; 
+    height: auto;
+    order: 0; 
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+  }
+  .main-ingenior { 
+    flex: 3 0px; 
+    height: auto;
+    order: 0; 
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+  }
+  .footer  { 
+    order: 4; }
+  h1 {
+  font-size: xxx-large
+    }
+  table {
+    margin-left:10%;
+    margin-right:10%;
+    width: 80%;
+  }
+  .column {
+    font-size: xxx-large;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+  h1 {
+    font-size: xx-large
+  }
+  .horizontal-box {
+    padding-left: 10%;
+    text-align: left;
+  }
+  table {
+    font-size: smaller;
+    margin: 0;
+  }
+  .column {
+    font-size: xx-large;
+  }
+}
+
+@media all and (max-width: 500px) {
+  table {
+      font-size: smaller;
+      margin: 0;
+  }
+  .column {
+    font-size: x-large;
+  }
+}
