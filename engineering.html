@@ -22,9 +22,9 @@
     <div class="aside"><h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1></div>
     <div class="main-ingenior"></div>
 	
-	<div class="ordliste">
+	<article>
 
-    </div>
+    </article>
 	  
     <div class="float-container">
       <div class="image-child" >
@@ -54,7 +54,7 @@
     d3.text("ing-ordliste.csv", function(data) {
       var parsedCSV = d3.csv.parseRows(data);
 
-      var container = d3.select("ordliste")
+      var container = d3.select("article")
         .append("table")
 
         .selectAll("tr")
