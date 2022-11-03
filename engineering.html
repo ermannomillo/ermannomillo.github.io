@@ -22,6 +22,10 @@
     <div class="aside"><h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1></div>
     <div class="main-ingenior"></div>
 	
+	<div class="ordliste">
+
+    </div>
+	  
     <div class="float-container">
       <div class="image-child" >
         <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/MS_Nordnorge%2C_Hurtigruten_in_Raftsundet%2C_Nordland%2C_Norway%2C_2015_September.jpg" alt="NHurtigruten ship MS Nordnorge in Raftsundet, Hadsel municipality, Nordland, Norway " width="30%"> 
@@ -50,7 +54,7 @@
     d3.text("ing-ordliste.csv", function(data) {
       var parsedCSV = d3.csv.parseRows(data);
 
-      var container = d3.select("body")
+      var container = d3.select("ordliste")
         .append("table")
 
         .selectAll("tr")
