@@ -236,6 +236,7 @@ float-container {
 @media all and (min-width: 768px) {
   body{
     margin: 0;
+    padding-bottom: 3em;
   }
   .aside { 
     flex: 0.2 auto; 
@@ -285,6 +286,7 @@ float-container {
 @media all and (max-width: 768px) {
   body {
     margin: 0;
+    padding-bottom: 3em;
   }
   h1 {
     font-size: xx-large
