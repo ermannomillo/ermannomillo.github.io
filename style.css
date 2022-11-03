@@ -87,7 +87,7 @@ flex: 1 100%;
   background: #16a7ff;
   height: auto;
   overflow: hidden;
-  position: inherit;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
