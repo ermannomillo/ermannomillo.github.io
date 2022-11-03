@@ -52,7 +52,7 @@
     d3.text("it-ordliste.csv", function(data) {
       var parsedCSV = d3.csv.parseRows(data);
 
-      var container = d3.select("body")
+      var container = d3.select("article")
         .append("table")
 
         .selectAll("tr")
