@@ -22,7 +22,7 @@
     <div class="aside">
 		  <h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1>
 	  </div>
-    <div class="main">
+    <div class="main" id="welcome">
        <h1>Velkommen!</h1>
 	  </div>
 	
@@ -60,6 +60,23 @@
 	<footer class="footer" id="sea1">© 2022 Nicolò Ermanno Millo</footer>
 
   </div>
+
+	<script>
+	function startTime() {
+	  const today = new Date();
+	  let h = today.getHours();
+	  let m = today.getMinutes();
+	  m = checkTime(m);
+	  document.getElementById('welcome').innerHTML =  "kl. "h + ":" + m;
+	  setTimeout(startTime, 1000);
+	}
+
+	function checkTime(i) {
+	  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	  return i;
+	}
+	</script>
+
 
 </body>
 </html>
