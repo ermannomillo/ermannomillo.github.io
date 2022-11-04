@@ -8,7 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=STIX Two Text' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
 
-<body>
+<body  onload="startTime()">
 
   <div class="flex-container">
     <div class="header">
@@ -20,7 +20,9 @@
     </div>
 
     <div class="aside"><h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1></div>
-    <div class="main-ingenior"></div>
+	  <div class="main-ingenior">
+		  <h1 id="welcome"></h1>
+	  </div>
 	
 	<article></article>
 	  
@@ -65,6 +67,21 @@
           .text(function(d) { return d; });
     });
   </script>
+	<script>
+	function startTime() {
+	  const today = new Date();
+	  let h = today.getHours();
+	  let m = today.getMinutes();
+	  m = checkTime(m);
+	  document.getElementById('welcome').innerHTML = h + ":" + m;
+	  setTimeout(startTime, 1000);
+	}
+
+	function checkTime(i) {
+	  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	  return i;
+	}
+	</script>
 
 </body>
 </html>
