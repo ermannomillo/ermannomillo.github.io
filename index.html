@@ -22,8 +22,8 @@
     <div class="aside">
 		  <h1 align="left">Ingeniør- og <br> Informatikkordliste <br> på Bokmål</h1>
 	  </div>
-    <div class="main" id="welcome">
-       <h1>Velkommen!</h1>
+    <div class="main">
+       <h1 id="welcome" >Velkommen!</h1>
 	  </div>
 	
     <div class="horizontal-box">
@@ -67,7 +67,7 @@
 	  let h = today.getHours();
 	  let m = today.getMinutes();
 	  m = checkTime(m);
-	  document.getElementById('welcome').innerHTML =  "kl. "h + ":" + m;
+	  document.getElementById('welcome').innerHTML =  ", kl. "h + ":" + m;
 	  setTimeout(startTime, 1000);
 	}
 
